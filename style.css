@@ -1,0 +1,133 @@
+body {
+    background-image: url(/Kazan-Storefront-1920x1440.jpg);
+    background-size: 100vw 100vh;
+    width: 100%;
+    background-repeat: no-repeat;
+    text-align: center;
+}
+
+h1 {
+    text-align: center;
+}
+h2 {
+    color: slategray;
+    text-align: center;
+    font-size: 2em;
+}
+
+h2:hover {
+   color: goldenrod; 
+}
+
+p {
+    text-align: center;
+}
+
+p:hover {
+   color: goldenrod;
+
+}
+
+#hours {
+    display: table;
+    width: 20%;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+
+
+.sidebar {
+    position: relative;    
+    overflow: hidden;
+    display: block;
+    position: absolute;
+    top: 0;
+    left: 0;
+    background-color: black;
+    width: 20%;
+    height: 100vh;
+    z-index: 1;
+    border-right: 3px solid slategray;
+}
+
+.sidebar::before {
+    content: "";
+    background-image: url(/decor-2485457_1280.png);
+    background-size: cover;
+    opacity: .3;
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    bottom: 0vh;
+    left: 0;
+    z-index: -999;
+}
+
+.sidebar ul {
+    overflow: hidden;
+    list-style-type: none;
+    margin: 0;
+    padding: 3vh 0;
+    text-align: center;
+}
+
+.sidebar li {
+    background-color: slategrey;
+    padding: 10px;
+    margin-bottom: 20px;
+    z-index: 3;
+    border-style: solid;
+    border-width: 1px 5px;
+}
+
+
+.sidebar a {
+    color: black;
+    text-decoration: none;
+    width: 100%;
+    height: 100%;
+} 
+
+
+.sidebar li:hover {
+    background-color: goldenrod;
+    font-size: 1.2em;
+}
+
+footer {
+    position: fixed;
+    bottom: 0;
+    right: 0;
+    background-color: slategray;
+    width: 100%;
+    color: black;
+    text-align: end;
+    z-index: 4;
+
+}
+
+.maindiv {
+    position: absolute;
+    right:0;
+    top: 40vh;
+    width: 75%;
+    height: 60vh;
+    padding-left: 25px;
+    border: 1px solid black;
+    color: hsl(210, 13%, 75%);
+    background-color: hsla(0, 0%, 0%, .9);
+}
+
+#menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-content: space-between;
+
+}
+
+.small-img {
+    width: 150px;
+    height: 100px;
+}
