@@ -9,27 +9,25 @@
             window.alert("You're not supposed to be here!");
             console.log("User Error! User is not supposed to be on this page!");
             document.write(Math.PI);
-            document.getElementById("debug").innerHTML="Debug here!";
+
+            function elementGet() {
+                document.getElementById("debug").innerHTML="Debug here!";
+            }
             </script>
-        
+        <button onclick="elementGet()">Don't click here!</button>        
         <p id="debug">Start here!</p>            
         <p id="help" onclick="javascript:history.back()">Click here to go back!!!</p>
-        
-        <script>
-            var x = 25;
-        </script>
 
         <script>
-            var y = 25;
-        </script>
-
-        <script>
-            function multiplyThis(a, b) {
-                return a*b;
+             var x = 25;
+             var y = 25;
+            function multiplyThis(x, y) {
+                window.alert(x*y)
             }
-            var multiple = multiplyThis(x, y);
             window.print();
         </script>
+
+        <button onclick="multiplyThis(x, y)">Multiply x and y</button>
 
         
 
